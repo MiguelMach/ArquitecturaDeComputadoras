@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> Principios Electricos </title>
+	<link rel="stylesheet" type="text/css" href="..\CSS\Style.css">
+</head>
+<body>
+	<header>
+		<div class=wrapp>
+			<img src="../MEDIA/IMGS/TecNacional.png" width="100" height="50">
+			<img src="../MEDIA/IMGS/TecSaltillo.jpg" width="50" height="50">
+			<nav>
+				<ul> 
+					<li><a href="Index.html"> Inicio </a></li>
+					<li><a href="Unidad_1.html"> Unidad 1 </a></li>
+					<li><a href="Unidad_2.html"> Unidad 2 </a></li>
+					<li><a href="Unidad_3.html"> Unidad 3 </a></li>
+					<li><a href="Unidad_4.html"> Unidad 4 </a></li>
+				</ul>
+			<nav>
+		</div>
+	</header>
+	<section class=main>
+		<div class=wrapp>
+			<div class=mensaje>
+				<h1> Unidad 2. </h1>
+			</div>
+				<div class=mensaje>
+					<h3> Estructura y funcionamiento de la unidad central de procesamiento. </h3>
+				</div>
+				<br>			
+			<div class=articulo>
+				<article>
+				<div class=mensaje>
+					<h2> 2.1 Organizacion del procesador. </h2>
+				</div>
+					<p>La función principal de un procesador es ejecutar instrucciones y la organización que tiene viene condicionada por las tareas que debe realizar y por cómo
+						debe hacerlo.</p>
+					<br>
+					<p>Los procesadores están diseñados y operan según una señal de sincronización.
+						Esta señal, conocida como señal de reloj, es una señal en forma de onda cuadrada periódica con una determinada frecuencia. Todas las operaciones hechas
+						por el procesador las gobierna esta señal de reloj: un ciclo de reloj determina
+						la unidad básica de tiempo, es decir, la duración mínima de una operación
+						del procesador.</p>
+					<br>
+					<p>Para ejecutar una instrucción, son necesarios uno o más ciclos de reloj, dependiendo del tipo de instrucción y de los operandos que tenga.</p>
+					<br>
+					<p>Las prestaciones del procesador no las determina solo la frecuencia de reloj,
+						sino otras características del procesador, especialmente del diseño del juego de
+						instrucciones y la capacidad que tiene para ejecutar simultáneamente múltiples instrucciones.</p>
+					<br>
+					<img src="../MEDIA/IMGS/businterno.png" width="500" height="300">
+					<br>
+					<br>
+				<div class=mensaje>
+					<h2> 2.2 Estructura de registros. </h2>
+				</div>
+					<br>
+					<br>
+					<p>Primero que nada<h1> ¿Que es un registro?</h1></p>
+					<br>
+					<p>Un registro es una memoria que esta ubicada en el procesador y se encuentra en el nivel más alto en la jerarquía de memoria, 
+					por lo tanto tiene una alta velocidad pero con poca capacidad para almacenar datos que va desde los 4 bits hasta los 64 bits dependiendo 
+					del procesador que se utilice. Los datos  que almacena son los que se usan frecuentemente.</p>
+					<br>
+					<img src="../MEDIA/IMGS/registro.PNG" width="500" height="300">
+					<br>
+					<br> 
+					<h1>Registros visibles para el usuario.</h1>
+					<br>
+					<p>Son aquellos que pueden ser referenciado por medio del lenguaje maquina que ejecuta la CPU, los registro que normalmente disponibles son:</p>
+					<br>
+					<p>Registros de propósito general, son aquellos que pueden guardar tanto datos como direcciones.</p>
+					<br>
+					<p>Registro de datos, que pueden ser asignados por el programador a diversas funciones. 
+						En algunos casos son de propósito general y pueden ser empleados por cualquier instrucción de máquina que lleve a cabo operaciones sobre los datos.</p>
+					<br>
+					<p>Registros de direcciones, contienen direcciones en la memoria principal de datos y este tipo de registro puede ser de propósito general o estar a un modo específico de direccionamiento.</p>
+					<br>
+					<p>Códigos de condición, también conocidos como indicadores o flags. Los códigos de  condición, son bits activados por el procesador como resultado de determinadas operaciones.</p>
+					<br>
+					<img src="../MEDIA/IMGS/visible.PNG" width="500" height="300">
+					<br>
+					<br>
+				<div align=right>
+					<button type="button" onclick="window.location.href='../HTML/Unidad_2_1.html'"> Siguiente </button>
+				</div>
+					<br>
+				</article>
+			</div>	
+			<aside>
+				<div class=widget>
+					<h2> Temario </h2>
+					<nav>
+					<ul>
+					
+						<li><a href="Unidad_2.html">Unidad 2: Estructura y funcionamiento de la unidad central de procesamiento. </a></li>
+							<ul>
+								<li><a href="Unidad_2.html"> 2.1 Organizacion del procesador. </a></li>
+							</ul>
+							<ul>
+								<li><a href="Unidad_2.html"> 2.2 Estructura de registros. </a></li>
+							</ul>
+								<ul>
+									<li><a href="Unidad_2.html"> 2.2.1 Registros visibles para el usuario. </a></li>
+									<li><a href="Unidad_2_1.html"> 2.2.2 Registros de control y de estados. </a></li>
+									<li><a href="Unidad_2_1.html"> 2.2.3 Ejemplos de registros de CPU reales. </a></li>
+								</ul>
+							<ul>
+								<li><a href="Unidad_2_2.html"> 2.3 El ciclo de instruccion.</a></li>
+							</ul>
+								<ul>
+									<li><a href="Unidad_2_2.html"> 2.3.1 Ciclo Fetch-Decode-Execute. </a></li>
+									<li><a href="Unidad_2_3.html"> 2.3.2 Segmenteacion de instricciones. </a></li>
+									<li><a href="Unidad_2_3.html"> 2.3.3 Conjunto de instricciones (Caracteristicas y funciones). </a></li>
+									<li><a href="Unidad_2_3.html"> 2.3.4 Modos de doreccionamiento. </a></li>
+								</ul>
+							<ul>
+								<li><a href="Unidad_2_3.html"> 2.4 Casos de estudio de CPU realies.</a></li>
+							</ul>
+					</nav>			
+				</aside>
+			</div>
+		</section>
+	
+</body>
+</html>

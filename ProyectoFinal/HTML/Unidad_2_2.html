@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> Principios Electricos </title>
+	<link rel="stylesheet" type="text/css" href="..\CSS\Style.css">
+</head>
+<body>
+	<header>
+		<div class=wrapp>
+			<img src="../MEDIA/IMGS/TecNacional.png" width="100" height="50">
+			<img src="../MEDIA/IMGS/TecSaltillo.jpg" width="50" height="50">
+			<nav>
+				<ul> 
+					<li><a href="Index.html"> Inicio </a></li>
+					<li><a href="Unidad_1.html"> Unidad 1 </a></li>
+					<li><a href="Unidad_2.html"> Unidad 2 </a></li>
+					<li><a href="Unidad_3.html"> Unidad 3 </a></li>
+					<li><a href="Unidad_4.html"> Unidad 4 </a></li>
+				</ul>
+			<nav>
+		</div>
+	</header>
+	<section class=main>
+		<div class=wrapp>
+			<div class=mensaje>
+				<h1> Unidad 2. </h1>
+			</div>
+				<div class=mensaje>
+					<h3> Estructura y funcionamiento de la unidad central de procesamiento. </h3>
+				</div>
+				<br>			
+			<div class=articulo>
+				<article>
+				<div class=mensaje>
+					<h2> 2.3 El ciclo de instruccion. </h2>
+				</div>
+					<p>Las instrucciones de un programa en código máquina que utiliza el ensamblador, necesitan unos datos para funcionar y generan 
+					unos resultados que es necesario almacenar. Por ejemplo, una operación de suma necesitará conocer donde se encuentran las dos cantidades 
+					que se desean sumar y el lugar donde deberá de almacenar el resultado una vez finaliza da la operación. Existen varias formas de indicar
+					estas posiciones que reciben el nombre de modos de direccionamiento.</p>
+					<br>
+					<p>Definicion.</p>
+					<br>
+					<p>Forma de especificar la ubicación de  los datos y modos de acceder a ellos y tienen como objetivos: Reducir el espacio ocupado en memoria
+						por las instrucciones, remitir la reubicación del código, facilitar el manejo de las estructuras de datos.</p>
+					<br>
+					<p>Los datos que maneja una instrucción máquina pueden estar ubicados en:</p>
+					<br>
+					<p> > La propia instrucción, donde el operando está contenido en un campo de la propia instrucción máquina.</p>
+					<br>
+					<p> > En un registro de la CPU, los registros de la CPU se pueden utilizar para almacenar temporalmente los datos.</p>
+					<br>
+					<p> > En la memoria del computador, en este caso será necesario especificar de algún modo la dirección de memoria donde 
+						se halla el operando: dirección efectiva (EA, “Efectiva address”) del operando.</p>
+					<br>
+					<p>Los operandos pueden ubicarse en los siguientes lugares:</p>
+					<br>
+					<p> > Dentro de la propia instrucción (operandos “inmediatos”)</p>
+					<br>
+					<p> > En registros visibles para el programador. </p>
+					<br>
+					<p> > En variables ubicadas en posiciones de memoria.</p>
+					<br>
+					<h1> Ciclo Fetch-Decode-Execute </h1>
+					<br>
+					<p>El encargado de ejecutar un programa en una computadora u otro sistema computacional es el CPU, lo realiza siguiendo el
+						llamado ciclo Fetch Decode Execute, con este ciclo se ejecutan todas las tareas que una computadora puede realizar.</p>
+					<br>
+					<p>Este ciclo tiene algunas variantes y conforme ha avanzado el tiempo y la tecnología ha sufrido algunos cambios, pero el 
+						ciclo básico se conforma de las siguientes etapas:</p>
+					<br>
+					<p> > Traer la instrucción: Se obtiene la instrucción desde memoria y se almacena en el registro del CPU para instrucciones.</p>
+					<br>
+					<p> > Decodificar la instrucción: Se identifica el modo de direccionamiento de la instrucción y la ubicación de los datos a tratar, 
+						ya sea de memoria, registro o instrucción directamente.</p>
+					<br>
+					<p> > Carga de Parámetros: Se ejecuta la lectura, cargando todos los datos identificados en el paso anterior.</p>
+					<br>
+					<p> > Ejecutar: Se ejecuta la instrucción ya configurada, realiza la tarea indicada, ya sea una suma, resta, almacenar información,
+						extraer información etc.</p>
+					<br>
+					<p>Almacenar: Se almacena el resultado obtenido de ejecutar la instrucción, por ejemplo, 
+						el resultado de una suma o un índice (Número) como resultado de éxito de almacenar u obtener información de un archivo, entre otros.</p>
+					<br>
+					<p>Actualizar PC: Esta etapa es la de actualizar el registro PC (Program Counter) que contiene la siguiente dirección a ejecutar.</p>
+					<br>
+					<br>
+				<div align=right>
+					<button type="button" onclick="window.location.href='../HTML/Unidad_2_1.html'"> Anterior </button> <button type="button" onclick="window.location.href='../HTML/Unidad_2_3.html'"> Siguiente </button>
+				</div>
+					<br>
+				</article>
+			</div>	
+			<aside>
+				<div class=widget>
+					<h2> Temario </h2>
+					<nav>
+					<ul>
+					
+						<li><a href="Unidad_2.html">Unidad 2: Estructura y funcionamiento de la unidad central de procesamiento. </a></li>
+							<ul>
+								<li><a href="Unidad_2.html"> 2.1 Organizacion del procesador. </a></li>
+							</ul>
+							<ul>
+								<li><a href="Unidad_2.html"> 2.2 Estructura de registros. </a></li>
+							</ul>
+								<ul>
+									<li><a href="Unidad_2.html"> 2.2.1 Registros visibles para el usuario. </a></li>
+									<li><a href="Unidad_2_1.html"> 2.2.2 Registros de control y de estados. </a></li>
+									<li><a href="Unidad_2_1.html"> 2.2.3 Ejemplos de registros de CPU reales. </a></li>
+								</ul>
+							<ul>
+								<li><a href="Unidad_2_2.html"> 2.3 El ciclo de instruccion.</a></li>
+							</ul>
+								<ul>
+									<li><a href="Unidad_2_2.html"> 2.3.1 Ciclo Fetch-Decode-Execute. </a></li>
+									<li><a href="Unidad_2_3.html"> 2.3.2 Segmenteacion de instricciones. </a></li>
+									<li><a href="Unidad_2_3.html"> 2.3.3 Conjunto de instricciones (Caracteristicas y funciones). </a></li>
+									<li><a href="Unidad_2_3.html"> 2.3.4 Modos de doreccionamiento. </a></li>
+								</ul>
+							<ul>
+								<li><a href="Unidad_2_3.html"> 2.4 Casos de estudio de CPU realies.</a></li>
+							</ul>
+					</nav>			
+				</aside>
+			</div>
+		</section>
+	
+</body>
+</html>

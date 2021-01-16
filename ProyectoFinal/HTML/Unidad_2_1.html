@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> Principios Electricos </title>
+	<link rel="stylesheet" type="text/css" href="..\CSS\Style.css">
+</head>
+<body>
+	<header>
+		<div class=wrapp>
+			<img src="../MEDIA/IMGS/TecNacional.png" width="100" height="50">
+			<img src="../MEDIA/IMGS/TecSaltillo.jpg" width="50" height="50">
+			<nav>
+				<ul> 
+					<li><a href="Index.html"> Inicio </a></li>
+					<li><a href="Unidad_1.html"> Unidad 1 </a></li>
+					<li><a href="Unidad_2.html"> Unidad 2 </a></li>
+					<li><a href="Unidad_3.html"> Unidad 3 </a></li>
+					<li><a href="Unidad_4.html"> Unidad 4 </a></li>
+				</ul>
+			<nav>
+		</div>
+	</header>
+	<section class=main>
+		<div class=wrapp>
+			<div class=mensaje>
+				<h1> Unidad 2. </h1>
+			</div>
+				<div class=mensaje>
+					<h3> Estructura y funcionamiento de la unidad central de procesamiento. </h3>
+				</div>
+				<br>			
+			<div class=articulo>
+				<article>
+					<h1>Registros de control y de estados.</h1>
+					<br>
+					<p>Se utilizan para controlar las operaciones del procesador, la mayor parte de estos registros no son visibles al 
+						usuario y algunos pueden ser accesibles a las instrucciones de maquina ejecutadas en un modo de control. 
+						Los registros utilizados son los siguientes:</p>
+					<br>
+					<p>Registro de direcciones de memoria (MAR), el cual contiene la dirección en donde se efectuará la próxima lectura o 
+					escritura de datos. El numero de direcciones depende del tamaño de la MAR.</p>
+					<br>
+					<p>Registro de datos de memoria (MBR), contiene los datos que van a ser escritos en la memoria o los que fueron leídos en ella.</p>
+					<br>
+					<p>Registro de direcciones de entrada y salida (I/O AR), especifica al dispositivo ya sea de entrada o salida.</p>
+					<br>
+					<p>Registro de datos de entrada y salida (I/O BR), es una área temporal en donde se lleva a cabo el intercambio de datos 
+						entre el procesador y el dispositivo de entrada y salida que esta especificado en IOAR.</p>
+					<br>
+					<p>Registro de instrucciones (IR), contiene la dirección de la siguiente instrucción que se va a ejecutar. </p>
+					<br>
+					<p>Palabras de estado del programa (PSW), contiene códigos de condición junto con otras informaciones de estado como el signo, acarro, desbordamiento, entre otras.</p>
+					<br>
+					<img src="../MEDIA/IMGS/control.PNG" width="500" height="300">
+					<br>
+					<h1>Ejemplos de registros de CPU reales.</h1>
+					<br>
+					<br>
+					<p>En algún diseño concreto de procesador es posible encontrar otros registros relativos a estado y control. Puede existir un puntero a un bloque de memoria que contenga 
+					información de estado adicional (por ejemplo, bloques de control de procesos). En las máquinas que usan interrupciones vectorizadas puede existir un registro de vector de 
+					interrupción. Si se utiliza una pila para llevar a cabo ciertas funciones (por ejemplo, llamada a subrutina), se necesita un puntero de pila del sistema. En un sistema de
+					memoria virtual se usa un puntero a la tabla de páginas. Por último, pueden emplearse registros para el control de operaciones de E/S. En el diseño de la organización de 
+					los registros de control y estado entran en juego varios factores. Una cuestión primordial es el soporte del sistema operativo. Algunos tipos de información de control son 
+					de utilidad específica para el sistema operativo. Si el diseñador del procesador posee una comprensión funcional del sistema operativo que se va a utilizar, la organización 
+					de los registros puede adaptarse hasta cierto punto a ese sistema operativo. Otra decisión importante en el diseño es la distribución de información de control entre registros
+					y memoria. Es frecuente dedicar los primeros (más bajos) pocos cientos o miles de palabras de memoria para fines de control. El diseñador debe decidir cuánta información de 
+					control debiera estar en registros y cuánta en memoria. Se presenta el compromiso habitual entre coste y velocidad.</p>
+					<br>
+					<br>
+				<div align=right>
+					<button type="button" onclick="window.location.href='../HTML/Unidad_2.html'"> Anterior </button> <button type="button" onclick="window.location.href='../HTML/Unidad_2_2.html'"> Siguiente </button>
+				</div>
+					<br>
+				</article>
+			</div>	
+			<aside>
+				<div class=widget>
+					<h2> Temario </h2>
+					<nav>
+					<ul>
+					
+						<li><a href="Unidad_2.html">Unidad 2: Estructura y funcionamiento de la unidad central de procesamiento. </a></li>
+							<ul>
+								<li><a href="Unidad_2.html"> 2.1 Organizacion del procesador. </a></li>
+							</ul>
+							<ul>
+								<li><a href="Unidad_2.html"> 2.2 Estructura de registros. </a></li>
+							</ul>
+								<ul>
+									<li><a href="Unidad_2.html"> 2.2.1 Registros visibles para el usuario. </a></li>
+									<li><a href="Unidad_2_1.html"> 2.2.2 Registros de control y de estados. </a></li>
+									<li><a href="Unidad_2_1.html"> 2.2.3 Ejemplos de registros de CPU reales. </a></li>
+								</ul>
+							<ul>
+								<li><a href="Unidad_2_2.html"> 2.3 El ciclo de instruccion.</a></li>
+							</ul>
+								<ul>
+									<li><a href="Unidad_2_2.html"> 2.3.1 Ciclo Fetch-Decode-Execute. </a></li>
+									<li><a href="Unidad_2_3.html"> 2.3.2 Segmenteacion de instricciones. </a></li>
+									<li><a href="Unidad_2_3.html"> 2.3.3 Conjunto de instricciones (Caracteristicas y funciones). </a></li>
+									<li><a href="Unidad_2_3.html"> 2.3.4 Modos de doreccionamiento. </a></li>
+								</ul>
+							<ul>
+								<li><a href="Unidad_2_3.html"> 2.4 Casos de estudio de CPU realies.</a></li>
+							</ul>
+					</nav>			
+				</aside>
+			</div>
+		</section>
+	
+</body>
+</html>

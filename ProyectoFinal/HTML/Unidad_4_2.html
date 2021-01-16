@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> Principios Electricos </title>
+	<link rel="stylesheet" type="text/css" href="..\CSS\Style.css">
+</head>
+<body>
+	<header>
+		<div class=wrapp>
+			<img src="../MEDIA/IMGS/TecNacional.png" width="100" height="50">
+			<img src="../MEDIA/IMGS/TecSaltillo.jpg" width="50" height="50">
+			<nav>
+				<ul> 
+					<li><a href="Index.html"> Inicio </a></li>
+					<li><a href="Unidad_1.html"> Unidad 1 </a></li>
+					<li><a href="Unidad_2.html"> Unidad 2 </a></li>
+					<li><a href="Unidad_3.html"> Unidad 3 </a></li>
+					<li><a href="Unidad_4.html"> Unidad 4 </a></li>
+				</ul>
+			<nav>
+		</div>
+	</header>
+	<section class=main>
+		<div class=wrapp>
+			<div class=mensaje>
+				<h1> Unidad 4. </h1>
+			</div>
+				<div class=mensaje>
+					<h3> Procesamiento Paralelo. </h3>
+				</div>
+				<br>
+			<div class=articulo>
+				<article>
+					<h1> Organizacion del espacio de direcciones de memoria.</h1>
+					<br>
+					<p>Organizacion logica.</p>
+					<br>
+					<p>Los programas a menudo están organizados en módulos, algunos de los cuales pueden ser compartidos por diferentes programas, algunos son de sólo-lectura y 
+						otros contienen datos que se pueden modificar. La gestión de memoria es responsable de manejar esta organización lógica, que se contrapone al espacio de direcciones 
+						físicas lineales. Una forma de lograrlo es mediante la segmentación de memoria.</p>
+					<br>
+					<p>Organizacion fisica.</p>
+					<br>
+					<p>La memoria suele dividirse en un almacenamiento primario de alta velocidad y uno secundario de menor velocidad. La gestión de memoria del sistema operativo se 
+						ocupa de trasladar la información entre estos dos niveles de memoria.</p>
+					<br>
+					<br>
+				<div class=mensaje>
+					<h2> Sistemas de memoria compartida: Multiprocesadores. </h2>
+				</div>
+					<p>Cada procesador posee su propia unidad de control ejecuta su propio código sobre sus propios datos, puede ejecutar cualquier aplicación (no solo programas vectoriales).</p>
+					<br>
+					<h1>Memoria Compartida Centralizada:</h1>
+					<br>
+					<p>La memoria compartida por todos los procesadores y accesible desde cualquiera. Descompuesta en varios módulos para permitir el acceso concurrente de varios procesadores.
+						Cada procesador debe tener un espacio de direccionamiento suficientemente amplio como para poder direccionarla completamente. Multiprocesador con un sistema de memoria 
+						compartida en el cual el tiempo de acceso varía dependiendo de la ubicación de la palabra de memoria.</p>
+					<br>
+					<p>Cada procesador posee su propia unidad de control ejecuta su propio código sobre sus propios datos, puede ejecutar cualquier aplicación (no solo programas vectoriales).</p>
+					<br>
+					<h1>Memoria Compartida Centralizada: </h1>
+					<br>
+					<p>La memoria compartida por todos los procesadores y accesible desde cualquiera. Descompuesta en varios módulos para permitir el acceso concurrente de varios procesadores.
+						Cada procesador debe tener un espacio de direccionamiento suficientemente amplio como para poder direccionarla completamente. Multiprocesador con un sistema de memorias
+						compartida en el cual el tiempo de acceso varía dependiendo de la ubicación de la palabra de memoria.</p>
+					<br>
+					<p>La memoria compartida se distribuye físicamente por todos los procesadores (memorias locales). El conjunto de memorias locales forma el espacio de direccionamiento global 
+						accesible por todos los procesadores. En los multiprocesadores cada procesador suele tener asociada una cache local y ello introduce el problema de la coherencia en chache: 
+						cualquier modificación local de una determinada posición de la memoria compartida se realizara primeramente sobre una chache local y ello puede dar lugar a una visión global 
+						incoherente de la memoria.</p>
+					<br>
+					<p>Los elementos que integran un multiprocesador puede estar conectados entre sí a través de una estructura Jerárquica de buses.
+						Los buses digitales son los sistemas de interconexión fundamentales adoptados en sistemas comerciales desde estaciones de trabajo a minicomputadores, mainframes y multiprocesadores.</p>
+					<br>
+					<br>
+				<div align=right> 
+					<button type="button" onclick="window.location.href='../HTML/Unidad_4_1.html'"> Anterior </button> <button type="button" onclick="window.location.href='../HTML/Unidad_4_3.html'"> Siguiente </button>
+				</div>
+
+				</article>
+			</div>
+			
+			<aside>
+				<div class=widget>
+					<h2> Temario </h2>
+					<nav>
+					<ul>
+						<li><a href="Unidad_4.html">Unidad 4: Procesamiento Paralelo. </a></li>
+							<ul>
+								<li><a href="Unidad_4.html"> 4.1 Aspectos basicos de la computacion paralea. </a></li>
+							</ul>
+							<ul>
+								<li><a href="Unidad_4.html"> 4.2 Tipos de computacion paralela. </a></li>
+							</ul>
+								<ul>
+									<li><a href="Unidad_4_1.html"> 4.2.1 Clasificacion. </a></li><br>
+									<li><a href="Unidad_4_1.html"> 4.1.2 Arquitectura de computadoras secuenciales. </a></li><br>
+									<li><a href="Unidad_4_2.html"> 4.1.3 Organizacion de direcciones de memoria. </a></li><br>
+								</ul>
+							<ul>
+								<li><a href="Unidad_4_2.html"> 4.3 Sistemas de memorias(compartido) Multiprocesadores. </a></li>
+							</ul>
+								<ul>
+									<li><a href="Unidad_4_3.html"> 4.3.1 Redes de interconexion dinamica.</a></li><br>
+								</ul>
+							<ul>
+								<li><a href="Unidad_4_4.html"> 4.4 Sistemas de memoria distribuidas. </a></li>
+							</ul>
+								<ul>
+									<li><a href="Unidad_4_4.html"> 4.4.1 Redes de interconexion estaticas.</a></li><br>
+								</ul>
+							<ul>
+								<li><a href="Unidad_4_4.html"> 4.5 Casos de estudio. </a></li>
+							</ul>	
+					</ul>
+					</nav>
+				</div>
+				</aside>
+			</div>
+		</section>
+
+</body>
+</html>

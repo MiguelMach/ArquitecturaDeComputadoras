@@ -1,0 +1,149 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> Principios Electricos </title>
+	<link rel="stylesheet" type="text/css" href="..\CSS\Style.css">
+</head>
+<body>
+	<header>
+		<div class=wrapp>
+			<img src="../MEDIA/IMGS/TecNacional.png" width="100" height="50">
+			<img src="../MEDIA/IMGS/TecSaltillo.jpg" width="50" height="50">
+			<nav>
+				<ul> 
+					<li><a href="Index.html"> Inicio </a></li>
+					<li><a href="Unidad_1.html"> Unidad 1 </a></li>
+					<li><a href="Unidad_2.html"> Unidad 2 </a></li>
+					<li><a href="Unidad_3.html"> Unidad 3 </a></li>
+					<li><a href="Unidad_4.html"> Unidad 4 </a></li>
+				</ul>
+			<nav>
+		</div>
+	</header>
+	<section class=main>
+		<div class=wrapp>
+			<div class=mensaje>
+				<h1> Unidad 1. </h1>
+			</div>
+				<div class=mensaje>
+					<h3>Arquitectura de Computo. </h3>
+				</div>
+				<br>
+					
+			<div class=articulo>
+				<article>
+					<h1>Entrada/Salida Programada.</h1>
+					<br>
+					<p>Para hacer la operación de Entrada/Salida entre el procesador y el modulo, el procesador ejecuta un programa que controla toda la operación de Entrada/Salida.</p>
+					<p>Cuando el procesador ejecuta una instrucción que implique una operación de Entrada/Salida hay una orden y una dirección del modulo de Entrada/Salida y del dispositivo externo.</p>
+					<br>
+					<p>Existen cuatro tipo de ordenes de Entrada/Salida:</p>
+					<br>
+					<p> > Control: Para activar el periférico e indicarle que hacer.</p>
+					<br>
+					<p> > Test: Para comprobar condiciones de estado del modulo de Entrada/Salida y sus periféricos.</p>
+					<br>
+					<p> > Lectura: Hace que el modulo de Entrada/Salida capte un dato del periférico y lo almacene en un registro interno de datos.</p>
+					<br>
+					<p> > Escritura: Hace que el modulo de Entrada/Salida capte un dato del bus de datos y luego lo trasmita al periférico.</p>
+					<br>
+					<br>
+					<h1>Entrada/Salida Mediantes Interrupotires.</h1>
+					<br>
+					<p>El programa genera una orden de Entrada/Salida y después continua ejecutándose hasta que el hardware lo interrumpe para indicar que la operación ha concluido.</p>
+					<br>
+					<img src="../MEDIA/IMGS/interruptor.png" width="400" height="200">
+					<br>
+					<br>
+					<p>La entrada y salida con interrupciones, aunque es mas eficiente que la programada, también requiere la intervención activa del procesador para trasferir los 
+						datos entre la memoria y el modulo de Entrada/Salida.</p>
+					<br>
+					<p>Esta técnica de Entrada/Salida pretende evitar que el procesador este parando o haciendo trabajo improductivo mientras espera a que el periférico este 
+					   preparado para hacer una nueva operación.</p>  
+					<br>
+					<br>
+					<h2>1.2.4 Buses.</h2>
+					<br>
+					<h1>Bus Paralelo.</h1>
+					<p>Es un bus en el cual los datos son enviados por bytes al mismo tiempo, con la ayuda de varias líneas que tienen funciones fijas. La cantidad de datos 
+						enviada es bastante grande con una frecuencia moderada y es igual al ancho de los datos por la frecuencia de funcionamiento. </p>
+					<br>
+					<p>En los computadores ha sido usado de manera intensiva, desde el bus del procesador, los buses de discos duros, tarjetas de expansión y de video hasta las impresoras.</p>
+					<br>
+					<h1>Bus Serie.</h1>
+					<br>
+					<p>En este los datos son enviados, bit por bit y se reconstruyen por medio de registros o rutina de software. Esta formado por pocos conductores y su ancho de 
+						banda depende de la frecuencia.</p> 
+					<br>
+					<p>Es usado desde hace menos de 10 años en buses para discos  duros, tarjetas de expansión y para el bus del procesador.</p>
+					<br>
+					<p>Cada bus se halla generalmente constituido por entre 50 y 100 líneas físicas distintas que se dividen a su vez en tres subconjuntos:</p>
+					<br>
+					<p> > BUS DE DIRECCIONES: Trasporta las direcciones de memoria al que el procesador desea acceder, para leer o escribir datos. Se trata de un bus unidireccional.</p>
+					<br>
+					<p> > BUS DE DATOS: Trasfiere tantos las instrucciones que provienen del procesador como las que se dirigen hacia él. Se trata de un bus bidireccional.</p>
+					<br>
+					<p> > BUS DE CONTROL: Trasporta ordenes y las señales de sincronización que provienen de la unidad de control y viajan hacia los distintos componentes de hardware.</p>
+					<br>
+					<br>
+					<h1>BUSES MULTIPLEXADOS BASICOS.</h1>
+					<br>
+					<p>En las computadoras, el microprocesador controla (y se comunica con) las memorias y los dispositivos de Entrada/Salida a través de la estructura de bus interna. 
+						El bus esta multiplexado de manera que cualquiera de los dispositivos que están conectados al mismo tiempo pueda enviar o recibir datos hacia o  desde los otros dispositivos.</p>
+					<br>
+					<br>
+				<div align=left> 
+					<button type="button" onclick="window.location.href='../HTML/Unidad_1_3.html'"> Anterior 
+				</div>
+					</article>
+			</div>
+			
+			<aside>
+				<div class=widget>
+					<h2> Temario </h2>
+					<nav>
+					<ul>
+						<li><a href="Unidad_1.html">Unidad 1:Arquitectura de computo.</a></li>
+							<ul>
+								<li><a href="Unidad_1.html"> 1.1 Modelos de arquitectura de computo. </a>
+							</ul>	
+								<ul>
+									<li><a href="Unidad_1.html">1.1.1 Clasicos.</a></li><br>
+									<li><a href="Unidad_1.html">1.1.2 Segmentados.</a></li><br>
+									<li><a href="Unidad_1.html">1.1.3 De multiprocesamiento.</a></li>
+								</ul>
+							<ul>
+									
+								<li><a href="Unidad_1_2.html"> 1.2 Analisis de los componentes. </a></li>
+							</ul>
+									<ul>
+										<li><a href="Unidad_1_2.html">1.2.1 Arquitecturas.</a></li><br>
+										<li><a href="Unidad_1_2.html">1.2.1.1 Unidad Central de Procesamiento.</a></li><br>
+										<li><a href="Unidad_1_2.html">1.2.1.2 Unidad Aritmetica Logica.</a></li><br>
+										<li><a href="Unidad_1_2.html">1.2.1.3 Registros.</a></li><br>
+										<li><a href="Unidad_1_2.html">1.2.1.4 Buses.</a></li><br>
+										<li><a href="Unidad_1_3.html">1.2.2 Memorias.</a></li><br>
+										<li><a href="Unidad_1_3.html">1.2.2.1 Conceptos basicos del manejo de memoria.</a></li><br>
+										<li><a href="Unidad_1_3.html">1.2.2.3 Memoria principal</a></li><br>
+										<li><a href="Unidad_1_3.html">1.2.3 Manejo de la Entrada/Salida.</a></li><br>
+										<li><a href="Unidad_1_3.html">1.2.3.1 Modulos de Entrada/Salida.</a></li><br>
+										<li><a href="Unidad_1_4.html">1.2.3.2 Entrada/Salida pragramada.</a></li><br>
+										<li><a href="Unidad_1_4.html">1.2.3.3 Entrada/Salida mediante interrupciones.</a></li><br>
+										<li><a href="Unidad_1_4.html">1.2.3.4 Acceso directo a memoria.</a></li><br>
+										<li><a href="Unidad_1_4.html">1.2.3.5 Canales y procesadores de Entrada/Salida.</a></li><br>
+										<li><a href="Unidad_1_4.html">1.2.4 Buses.</a></li><br>
+										<li><a href="Unidad_1_4.html">1.2.4.1 Tipo de buses.</a></li><br>
+										<li><a href="Unidad_1_4.html">1.2.4.2 Estructura de los buses.</a></li><br>
+										<li><a href="Unidad_1_4.html">1.2.4.3 Jerarquias de los buses.</a></li><br>
+										<li><a href="Unidad_1_4.html">1.2.5 Interrupciones.</a></li><br>
+									</ul>
+					</nav>
+					</ul>
+				</div>
+			</aside>
+			</div>
+		</section>
+	
+</body>
+</html>
